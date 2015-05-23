@@ -9,6 +9,14 @@
 	min-width: 768px;
 }
 
+.clearfix {
+	clear: both;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
 /* Site Header */
 
 #site-header {
@@ -92,6 +100,7 @@
 
 #promo-first {
 	background: url("images/promo-1.jpg") 50% 50% no-repeat;
+	margin-left: 0.5%;
 }
 
 #promo-second {
@@ -110,6 +119,8 @@
 
 .sponsored-donations {
 	text-align: center;
+	overflow: auto;
+	margin-bottom: 10px;
 }
 
 .sponsored-donations li {
@@ -139,4 +150,58 @@
 
 #nepal-quake-info > a {
 	color: #08c;
+}
+
+/* Site Footer */
+
+.site-footer {
+	border-top: 1px solid #d6d6d6;
+	max-width: 1000px;
+	margin: 20px auto;
+	padding-top: 15px;
+	font-size: 11px;
+	font-weight: 400;
+	color: #999;
+	min-height: 55px;
+}
+
+.site-footer a {
+	color: #666;
+}
+
+.site-footer li {
+	display: inline-block;
+	border-right: 1px solid #d6d6d6;
+	padding-right: 7.5px;
+}
+
+.site-footer li:last-child {
+	border-right: 0;
+}
+
+#shop-options {
+	float: left;
+}
+
+#footer-nav {
+	float: right;
+}
+
+#footer-nav li {
+	vertical-align: top;
+}
+
+#footer-nav #country-selector {
+	display: inline-block;
+	width: 50%;
+}
+
+#copyright-info {
+	display: inline-block;
+}
+
+#terms-and-privacy {
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 11px;
 }
